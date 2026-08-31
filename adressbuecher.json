@@ -3,9 +3,9 @@
     "vars": [
       "item",
       "itemLabel",
-      "ortLabel",
       "jahr",
-      "digitalisat"
+      "digitalisat",
+      "orte"
     ]
   },
   "results": {
@@ -19,6 +19,10 @@
           "type": "literal",
           "value": "Adressbuch Göttingen",
           "xml:lang": "de"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Göttingen"
         }
       },
       {
@@ -30,6 +34,10 @@
           "type": "literal",
           "value": "Adressbuch Hameln",
           "xml:lang": "de"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Hameln"
         }
       },
       {
@@ -41,6 +49,10 @@
           "type": "literal",
           "value": "Adressbuch Heilbronn",
           "xml:lang": "de"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Heilbronn"
         }
       },
       {
@@ -57,6 +69,10 @@
           "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "type": "literal",
           "value": "1938-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Landau in der Pfalz"
         }
       },
       {
@@ -77,26 +93,10 @@
         "digitalisat": {
           "type": "uri",
           "value": "https://www.digibib.genealogy.net/viewer/image/862857090D_1930/"
-        }
-      },
-      {
-        "item": {
-          "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q132732368"
         },
-        "itemLabel": {
+        "orte": {
           "type": "literal",
-          "value": "Adreß-Buch für Speyer u. Umgebung 1904",
-          "xml:lang": "de"
-        },
-        "jahr": {
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "type": "literal",
-          "value": "1904-01-01T00:00:00Z"
-        },
-        "digitalisat": {
-          "type": "uri",
-          "value": "https://www.dilibri.de/rlb/periodical/pageview/952833"
+          "value": "Germersheim, Landau in der Pfalz"
         }
       },
       {
@@ -117,6 +117,34 @@
         "digitalisat": {
           "type": "uri",
           "value": "https://www.dilibri.de/rlb/periodical/pageview/1252996"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q132732368"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß-Buch für Speyer u. Umgebung 1904",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1904-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/rlb/periodical/pageview/952833"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Speyer"
         }
       },
       {
@@ -137,12 +165,16 @@
         "digitalisat": {
           "type": "uri",
           "value": "https://www.dilibri.de/rlb/periodical/titleinfo/1252161"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
         }
       }
     ]
   },
   "meta": {
-    "query-time-ms": 1455,
+    "query-time-ms": 1182,
     "result-size-total": 8
   }
 }
