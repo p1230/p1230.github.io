@@ -13,46 +13,161 @@
       {
         "item": {
           "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q115222524"
+          "value": "http://www.wikidata.org/entity/Q115753730"
         },
         "itemLabel": {
           "type": "literal",
-          "value": "Adressbuch Göttingen",
+          "value": "Adressbuch der Stadt Freising 2008/2009",
           "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2008-01-01T00:00:00Z"
         },
         "orte": {
           "type": "literal",
-          "value": "Göttingen"
+          "value": "Freising"
         }
       },
       {
         "item": {
           "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q115222664"
+          "value": "http://www.wikidata.org/entity/Q115753730"
         },
         "itemLabel": {
           "type": "literal",
-          "value": "Adressbuch Hameln",
+          "value": "Adressbuch der Stadt Freising 2008/2009",
           "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2009-01-01T00:00:00Z"
         },
         "orte": {
           "type": "literal",
-          "value": "Hameln"
+          "value": "Freising"
         }
       },
       {
         "item": {
           "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q115269396"
+          "value": "http://www.wikidata.org/entity/Q115753898"
         },
         "itemLabel": {
           "type": "literal",
-          "value": "Adressbuch Heilbronn",
+          "value": "Adressbuch der Stadt Freising 2015/2016, Ausgabe Juni 2015",
           "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "2015-06-01T00:00:00Z"
         },
         "orte": {
           "type": "literal",
-          "value": "Heilbronn"
+          "value": "Freising"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q115754641"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adressbuch des Freisinger Tagblattes für Freising, Weihenstephan, Vötting, Neustift, Moosburg, Nandlstadt und Au",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1903-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Nandlstadt, Au in der Hallertau, Moosburg an der Isar, Freising, Weihenstephan, Vötting, Neustift, Landkreis Freising"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q115754641"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adressbuch des Freisinger Tagblattes für Freising, Weihenstephan, Vötting, Neustift, Moosburg, Nandlstadt und Au",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1904-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Weihenstephan, Neustift, Freising, Moosburg an der Isar, Nandlstadt, Landkreis Freising, Au in der Hallertau, Vötting"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q115754754"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Stadt und Landkreis Freising",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1939-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Landkreis Freising, Freising"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116054716"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1925",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1925-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116169629"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1930",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1930-01-01T00:00:00Z"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
         }
       },
       {
@@ -72,7 +187,679 @@
         },
         "orte": {
           "type": "literal",
-          "value": "Landau in der Pfalz"
+          "value": "Landau in der Pfalz, Germersheim"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116172076"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1898",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1898-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115316_1898/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116172113"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1899",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1899-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115316_1899/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116172161"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1900",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1900-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115316_1900/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116172176"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1901",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1901-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115316_1901/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180122"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1902",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1902-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115316_1902/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180156"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1903",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1903-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1903/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180187"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1904",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1904-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1904/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180225"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Berlin und seine Vororte 1905",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1905-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1905/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180506"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1906",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1906-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1906/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180535"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1907",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1907-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1907/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116180546"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1908",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1908-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1908/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116181070"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1909",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1909-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1909/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116181214"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1910",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1910-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1910/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116181445"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1911",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1911-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1911/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116181774"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1912",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1912-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1912/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116181821"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1913",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1913-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1913/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116182058"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1914",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1914-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1914/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116182118"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1915",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1915-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1915/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189045"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1916",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1916-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1916/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189135"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1917",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1917-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1917/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189248"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1918",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1918-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1918/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116759275"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1920",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1920-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1920/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189297"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1926",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1926-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1926/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189341"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1927",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1927-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1927/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189435"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1928",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1928-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1928/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116189501"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1931",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1931-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1931/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116190067"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner AdreßBuch für das Jahr 1894",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1894-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115512_1894/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116171538"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Neues Adreßbuch für Berlin und seine Vororte 1896",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1896-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115512_1896/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
         }
       },
       {
@@ -96,7 +883,7 @@
         },
         "orte": {
           "type": "literal",
-          "value": "Germersheim, Landau in der Pfalz"
+          "value": "Landau in der Pfalz, Germersheim"
         }
       },
       {
@@ -121,6 +908,30 @@
         "orte": {
           "type": "literal",
           "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q132732388"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Speier u. Umgebung 1911",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1911-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/rlb/periodical/pageview/950494"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Speyer"
         }
       },
       {
@@ -174,7 +985,7 @@
     ]
   },
   "meta": {
-    "query-time-ms": 1182,
-    "result-size-total": 8
+    "query-time-ms": 1878,
+    "result-size-total": 42
   }
 }
