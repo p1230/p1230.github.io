@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Adressbücher</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; font-family: sans-serif; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>Adressbücher Trier</h1>
+  <table id="tabelle-adressbuecher">
+    <thead>
+      <tr>
+        <th>Titel / Bezeichnung</th>
+        <th>Erscheinungsjahr</th>
+        <th>Digitalisat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Zeilen werden per JavaScript eingefügt -->
+    </tbody>
+  </table>
+
+  <script>
+    async function ladeAdressbuecher() {
+      try {
+        const response = await fetch('adressbuecher.json');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const bindings = data.results.bindings;
+        const tbody = document.querySelector('#tabelle-adressbuecher tbody');
+
+        bindings.forEach(row => {
+          const tr = document.createElement('tr');
+          
+          // 1. Titel (Label)
+          const titel = row.itemLabel ? row.itemLabel.value : 'Ohne Titel';
+          const itemUrl = row.item ? row.item.value : '#';
+          
+          // 2. Jahr (ISO-Datum zu Jahreszahl reduzieren, z. B. "+1912-00-00T00:00:00Z")
+          let jahr = '-';
+          if (row.jahr && row.jahr.value) {
+            // Entfernt ein eventuelles führendes '+' bei ISO-Datumsangaben
+            const cleanDate = row.jahr.value.replace(/^\+/, '');
+            jahr = cleanDate.substring(0, 4);
+          }
+          
+          // 3. Digitalisat
+          let digitalisat = '-';
+          if (row.digitalisat && row.digitalisat.value) {
+            digitalisat = `<a href="${row.digitalisat.value}" target="_blank" rel="noopener">Online lesen</a>`;
+          }
+
+          tr.innerHTML = `
+            <td><a href="${itemUrl}" target="_blank" rel="noopener">${titel}</a></td>
+            <td>${jahr}</td>
+            <td>${digitalisat}</td>
+          `;
+          
+          tbody.appendChild(tr);
+        });
+
+      } catch (error) {
+        console.error('Fehler beim Laden der Daten:', error);
+      }
+    }
+
+    ladeAdressbuecher();
+  </script>
+</body>
+</html>
