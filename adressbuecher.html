@@ -47,7 +47,7 @@
         }
 
         const data = await response.json();
-        alleBindings = data.results.bindings;
+        alleBindings = data.results ? data.results.bindings : [];
         
         const filterInput = document.getElementById('filter-ort');
         filterInput.disabled = false;
@@ -58,6 +58,17 @@
       } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
       }
+    }
+
+    function normalizeText(text) {
+      if (!text) return '';
+      // Normalisiert Unicode (NFD) und entfernt diakritische Zeichen/Akzente
+      return text
+        .toString()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim();
     }
 
     function tabelleRendern(bindings) {
@@ -95,11 +106,15 @@
     }
 
     function zellenFiltern(event) {
-      const suchbegriff = event.target.value.toLowerCase().trim();
+      const suchbegriff = normalizeText(event.target.value);
+
+      if (!suchbegriff) {
+        tabelleRendern(alleBindings);
+        return;
+      }
 
       const gefilterteDaten = alleBindings.filter(row => {
-        // Die Eigenschaft row.orte wird aus dem JSON gelesen, obwohl sie in der Tabelle nicht gerendert wird
-        const ortsWert = row.orte ? row.orte.value.toLowerCase() : '';
+        const ortsWert = row.orte ? normalizeText(row.orte.value) : '';
         return ortsWert.includes(suchbegriff);
       });
 
