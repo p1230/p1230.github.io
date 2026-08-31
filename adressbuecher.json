@@ -87,7 +87,7 @@
         },
         "orte": {
           "type": "literal",
-          "value": "Nandlstadt, Au in der Hallertau, Moosburg an der Isar, Freising, Weihenstephan, Vötting, Neustift, Landkreis Freising"
+          "value": "Landkreis Freising, Neustift, Moosburg an der Isar, Vötting, Freising, Nandlstadt, Weihenstephan, Au in der Hallertau"
         }
       },
       {
@@ -107,7 +107,7 @@
         },
         "orte": {
           "type": "literal",
-          "value": "Weihenstephan, Neustift, Freising, Moosburg an der Isar, Nandlstadt, Landkreis Freising, Au in der Hallertau, Vötting"
+          "value": "Moosburg an der Isar, Nandlstadt, Au in der Hallertau, Freising, Vötting, Neustift, Weihenstephan, Landkreis Freising"
         }
       },
       {
@@ -133,46 +133,6 @@
       {
         "item": {
           "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q116054716"
-        },
-        "itemLabel": {
-          "type": "literal",
-          "value": "Berliner Adreßbuch 1925",
-          "xml:lang": "de"
-        },
-        "jahr": {
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "type": "literal",
-          "value": "1925-01-01T00:00:00Z"
-        },
-        "orte": {
-          "type": "literal",
-          "value": "Berlin"
-        }
-      },
-      {
-        "item": {
-          "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q116169629"
-        },
-        "itemLabel": {
-          "type": "literal",
-          "value": "Berliner Adreßbuch 1930",
-          "xml:lang": "de"
-        },
-        "jahr": {
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "type": "literal",
-          "value": "1930-01-01T00:00:00Z"
-        },
-        "orte": {
-          "type": "literal",
-          "value": "Berlin"
-        }
-      },
-      {
-        "item": {
-          "type": "uri",
           "value": "http://www.wikidata.org/entity/Q132180087"
         },
         "itemLabel": {
@@ -187,7 +147,7 @@
         },
         "orte": {
           "type": "literal",
-          "value": "Landau in der Pfalz, Germersheim"
+          "value": "Germersheim, Landau in der Pfalz"
         }
       },
       {
@@ -721,6 +681,30 @@
       {
         "item": {
           "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116054716"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1925",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1925-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1925/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
           "value": "http://www.wikidata.org/entity/Q116189297"
         },
         "itemLabel": {
@@ -784,6 +768,30 @@
         "digitalisat": {
           "type": "uri",
           "value": "https://digital.zlb.de/viewer/image/34115495_1928/1/LOG_0003/"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Berlin"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q116169629"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Berliner Adreßbuch 1930",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1930-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://digital.zlb.de/viewer/image/34115495_1930/1/LOG_0003/"
         },
         "orte": {
           "type": "literal",
@@ -865,6 +873,54 @@
       {
         "item": {
           "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141239512"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Landau und die Südpfalz 1954",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1954-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://wiki.genealogy.net/index.php?title=Datei%3ALandau-AB-1954.djvu"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Germersheim, Landau in der Pfalz"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141239378"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Einwohnerbuch 1926 für Landau und Umgebung",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1926-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://wiki.genealogy.net/index.php?title=Datei:Landau-AB-1926.djvu"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Bellheim, Germersheim, Albersweiler, Billigheim-Ingenheim, Bad Bergzabern, Landau in der Pfalz, Birkweiler"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
           "value": "http://www.wikidata.org/entity/Q132184539"
         },
         "itemLabel": {
@@ -913,30 +969,6 @@
       {
         "item": {
           "type": "uri",
-          "value": "http://www.wikidata.org/entity/Q132732388"
-        },
-        "itemLabel": {
-          "type": "literal",
-          "value": "Adreßbuch für Speier u. Umgebung 1911",
-          "xml:lang": "de"
-        },
-        "jahr": {
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "type": "literal",
-          "value": "1911-01-01T00:00:00Z"
-        },
-        "digitalisat": {
-          "type": "uri",
-          "value": "https://www.dilibri.de/rlb/periodical/pageview/950494"
-        },
-        "orte": {
-          "type": "literal",
-          "value": "Speyer"
-        }
-      },
-      {
-        "item": {
-          "type": "uri",
           "value": "http://www.wikidata.org/entity/Q132732368"
         },
         "itemLabel": {
@@ -952,6 +984,78 @@
         "digitalisat": {
           "type": "uri",
           "value": "https://www.dilibri.de/rlb/periodical/pageview/952833"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Speyer"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242531"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Einwohnerbuch der Stadt Trier 1921/22",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1921-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/rlb/periodical/structure/493791"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242431"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier 1908/09",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1908-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/rlb/periodical/structure/603446"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q132732388"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreßbuch für Speier u. Umgebung 1911",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1911-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/rlb/periodical/structure/950779"
         },
         "orte": {
           "type": "literal",
@@ -981,11 +1085,131 @@
           "type": "literal",
           "value": "Trier"
         }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242488"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier 1914",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1914-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/ubtr/periodical/structure/145753"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242446"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1912-08-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/ubtr/periodical/structure/145754"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242512"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier 1920",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1920-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/ubtr/periodical/structure/3349367"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242582"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier 1903",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1903-05-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/ubtr/periodical/structure/483129"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q141242435"
+        },
+        "itemLabel": {
+          "type": "literal",
+          "value": "Adreß- und Geschäfts-Handbuch der Stadt Trier",
+          "xml:lang": "de"
+        },
+        "jahr": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "type": "literal",
+          "value": "1910-01-01T00:00:00Z"
+        },
+        "digitalisat": {
+          "type": "uri",
+          "value": "https://www.dilibri.de/ubtr/periodical/structure/484532"
+        },
+        "orte": {
+          "type": "literal",
+          "value": "Trier"
+        }
       }
     ]
   },
   "meta": {
-    "query-time-ms": 1878,
-    "result-size-total": 42
+    "query-time-ms": 1603,
+    "result-size-total": 51
   }
 }
