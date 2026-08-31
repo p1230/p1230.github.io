@@ -7,10 +7,21 @@
     table { border-collapse: collapse; width: 100%; font-family: sans-serif; }
     th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
     th { background-color: #f2f2f2; }
+    #filter-ort {
+      width: 100%;
+      max-width: 300px;
+      padding: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
   <h1>Adressbücher</h1>
+
+  <input type="text" id="filter-ort" placeholder="Nach Ort filtern..." disabled>
+
   <table id="tabelle-adressbuecher">
     <thead>
       <tr>
@@ -25,6 +36,8 @@
   </table>
 
   <script>
+    let alleBindings = [];
+
     async function ladeAdressbuecher() {
       try {
         const response = await fetch('adressbuecher.json');
@@ -34,42 +47,63 @@
         }
 
         const data = await response.json();
-        const bindings = data.results.bindings;
-        const tbody = document.querySelector('#tabelle-adressbuecher tbody');
+        alleBindings = data.results.bindings;
+        
+        const filterInput = document.getElementById('filter-ort');
+        filterInput.disabled = false;
+        filterInput.addEventListener('input', zellenFiltern);
 
-        bindings.forEach(row => {
-          const tr = document.createElement('tr');
-          
-          // 1. Titel (Label)
-          const titel = row.itemLabel ? row.itemLabel.value : 'Ohne Titel';
-          const itemUrl = row.item ? row.item.value : '#';
-          
-          // 2. Jahr (ISO-Datum zu Jahreszahl reduzieren, z. B. "+1912-00-00T00:00:00Z")
-          let jahr = '-';
-          if (row.jahr && row.jahr.value) {
-            // Entfernt ein eventuelles führendes '+' bei ISO-Datumsangaben
-            const cleanDate = row.jahr.value.replace(/^\+/, '');
-            jahr = cleanDate.substring(0, 4);
-          }
-          
-          // 3. Digitalisat
-          let digitalisat = '-';
-          if (row.digitalisat && row.digitalisat.value) {
-            digitalisat = `<a href="${row.digitalisat.value}" target="_blank" rel="noopener">Online lesen</a>`;
-          }
-
-          tr.innerHTML = `
-            <td><a href="${itemUrl}" target="_blank" rel="noopener">${titel}</a></td>
-            <td>${jahr}</td>
-            <td>${digitalisat}</td>
-          `;
-          
-          tbody.appendChild(tr);
-        });
+        tabelleRendern(alleBindings);
 
       } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
       }
+    }
+
+    function tabelleRendern(bindings) {
+      const tbody = document.querySelector('#tabelle-adressbuecher tbody');
+      tbody.innerHTML = '';
+
+      bindings.forEach(row => {
+        const tr = document.createElement('tr');
+        
+        // 1. Titel (Label)
+        const titel = row.itemLabel ? row.itemLabel.value : 'Ohne Titel';
+        const itemUrl = row.item ? row.item.value : '#';
+
+        // 2. Jahr (ISO-Datum zu Jahreszahl reduzieren)
+        let jahr = '-';
+        if (row.jahr && row.jahr.value) {
+          const cleanDate = row.jahr.value.replace(/^\+/, '');
+          jahr = cleanDate.substring(0, 4);
+        }
+        
+        // 3. Digitalisat
+        let digitalisat = '-';
+        if (row.digitalisat && row.digitalisat.value) {
+          digitalisat = `<a href="${row.digitalisat.value}" target="_blank" rel="noopener">Online lesen</a>`;
+        }
+
+        tr.innerHTML = `
+          <td><a href="${itemUrl}" target="_blank" rel="noopener">${titel}</a></td>
+          <td>${jahr}</td>
+          <td>${digitalisat}</td>
+        `;
+        
+        tbody.appendChild(tr);
+      });
+    }
+
+    function zellenFiltern(event) {
+      const suchbegriff = event.target.value.toLowerCase().trim();
+
+      const gefilterteDaten = alleBindings.filter(row => {
+        // Die Eigenschaft row.orte wird aus dem JSON gelesen, obwohl sie in der Tabelle nicht gerendert wird
+        const ortsWert = row.orte ? row.orte.value.toLowerCase() : '';
+        return ortsWert.includes(suchbegriff);
+      });
+
+      tabelleRendern(gefilterteDaten);
     }
 
     ladeAdressbuecher();
