@@ -7,6 +7,11 @@
     table { border-collapse: collapse; width: 100%; font-family: sans-serif; }
     th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
     th { background-color: #f2f2f2; }
+    
+    /* Sortierbare Spaltenköpfe */
+    th.sortable { cursor: pointer; user-select: none; }
+    th.sortable:hover { background-color: #e2e2e2; }
+
     #filter-ort {
       width: 100%;
       max-width: 300px;
@@ -14,6 +19,12 @@
       margin-bottom: 15px;
       font-size: 14px;
       box-sizing: border-box;
+    }
+
+    .wikidata-logo {
+      width: 20px;
+      height: 12px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -25,8 +36,9 @@
   <table id="tabelle-adressbuecher">
     <thead>
       <tr>
+        <th style="width: 80px; text-align: center;">Wikidata</th>
         <th>Titel / Bezeichnung</th>
-        <th>Erscheinungsjahr</th>
+        <th id="th-jahr" class="sortable">Erscheinungsjahr <span id="sort-icon">↕</span></th>
         <th>Digitalisat</th>
       </tr>
     </thead>
@@ -37,6 +49,8 @@
 
   <script>
     let alleBindings = [];
+    let aktuelleDaten = [];
+    let sortAscending = true; // true = aufsteigend, false = absteigend
 
     async function ladeAdressbuecher() {
       try {
@@ -48,12 +62,16 @@
 
         const data = await response.json();
         alleBindings = data.results ? data.results.bindings : [];
-        
+        aktuelleDaten = [...alleBindings];
+
         const filterInput = document.getElementById('filter-ort');
         filterInput.disabled = false;
         filterInput.addEventListener('input', zellenFiltern);
 
-        tabelleRendern(alleBindings);
+        // Sortier-EventListener für Erscheinungsjahr
+        document.getElementById('th-jahr').addEventListener('click', sortiereNachJahr);
+
+        tabelleRendern(aktuelleDaten);
 
       } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
@@ -62,7 +80,6 @@
 
     function normalizeText(text) {
       if (!text) return '';
-      // Normalisiert Unicode (NFD) und entfernt diakritische Zeichen/Akzente
       return text
         .toString()
         .toLowerCase()
@@ -78,25 +95,35 @@
       bindings.forEach(row => {
         const tr = document.createElement('tr');
         
-        // 1. Titel (Label)
-        const titel = row.itemLabel ? row.itemLabel.value : 'Ohne Titel';
+        // 1. Wikidata Link mit Logo
         const itemUrl = row.item ? row.item.value : '#';
+        const wikidataCell = `
+          <td style="text-align: center;">
+            <a href="${itemUrl}" target="_blank" rel="noopener" title="Wikidata-Objekt öffnen">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Wikidata-logo.svg" alt="Wikidata" class="wikidata-logo">
+            </a>
+          </td>
+        `;
 
-        // 2. Jahr (ISO-Datum zu Jahreszahl reduzieren)
+        // 2. Titel (ohne Link)
+        const titel = row.itemLabel ? row.itemLabel.value : 'Ohne Titel';
+
+        // 3. Jahr (ISO-Datum zu Jahreszahl reduzieren)
         let jahr = '-';
         if (row.jahr && row.jahr.value) {
           const cleanDate = row.jahr.value.replace(/^\+/, '');
           jahr = cleanDate.substring(0, 4);
         }
         
-        // 3. Digitalisat
+        // 4. Digitalisat
         let digitalisat = '-';
         if (row.digitalisat && row.digitalisat.value) {
           digitalisat = `<a href="${row.digitalisat.value}" target="_blank" rel="noopener">Online lesen</a>`;
         }
 
         tr.innerHTML = `
-          <td><a href="${itemUrl}" target="_blank" rel="noopener">${titel}</a></td>
+          ${wikidataCell}
+          <td>${titel}</td>
           <td>${jahr}</td>
           <td>${digitalisat}</td>
         `;
@@ -109,16 +136,35 @@
       const suchbegriff = normalizeText(event.target.value);
 
       if (!suchbegriff) {
-        tabelleRendern(alleBindings);
-        return;
+        aktuelleDaten = [...alleBindings];
+      } else {
+        aktuelleDaten = alleBindings.filter(row => {
+          const ortsWert = row.orte ? normalizeText(row.orte.value) : '';
+          return ortsWert.includes(suchbegriff);
+        });
       }
 
-      const gefilterteDaten = alleBindings.filter(row => {
-        const ortsWert = row.orte ? normalizeText(row.orte.value) : '';
-        return ortsWert.includes(suchbegriff);
+      tabelleRendern(aktuelleDaten);
+    }
+
+    function sortiereNachJahr() {
+      sortAscending = !sortAscending;
+      const sortIcon = document.getElementById('sort-icon');
+      sortIcon.textContent = sortAscending ? '↑' : '↓';
+
+      aktuelleDaten.sort((a, b) => {
+        // Extrahiere Jahreszahlen als Integer (0 falls nicht vorhanden)
+        const jahrA = a.jahr && a.jahr.value ? parseInt(a.jahr.value.replace(/^\+/, '').substring(0, 4), 10) : 0;
+        const jahrB = b.jahr && b.jahr.value ? parseInt(b.jahr.value.replace(/^\+/, '').substring(0, 4), 10) : 0;
+
+        if (sortAscending) {
+          return jahrA - jahrB;
+        } else {
+          return jahrB - jahrA;
+        }
       });
 
-      tabelleRendern(gefilterteDaten);
+      tabelleRendern(aktuelleDaten);
     }
 
     ladeAdressbuecher();
